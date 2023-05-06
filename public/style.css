@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'april_juneregular';
+  src: url('./font/april_june-webfont.woff2') format('woff2'),
+    url('./font/april_june-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --color-primary: #fdfcf963;
+  --color-secondary: #cbcec9;
+  --color-secondary-dark: #636363;
+  --color-Yellow: #ebb51f;
+  --color-Yellow-dark: #d39b2c;
+  --spacing: 0.2rem;
+  --transition: all 0.3s linear;
+}
+
+body {
+  color: var(--color-secondary-dark);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* BORDER */
+.underHeader {
+  border-top: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    var(--color-Yellow),
+    #a8682c,
+    #f2e63a
+  );
+}
+
+/* Section Season Coctail */
+.season__coctails {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.season__coctails--header {
+  text-align: center;
+}
+.season__coctails--header h4 {
+  font-size: calc(20px + 0.7vw);
+  font-weight: 400;
+}
+
+.season__coctails--header h4,
+p {
+  letter-spacing: 2px;
+}
+
+.season__coctails--icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 4rem 0;
+}
+.season__coctails--icon img {
+  width: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  padding-bottom: 10px;
+}
+.season__coctails--icon--underLine {
+  border-bottom: solid var(--color-Yellow);
+}
+
+.season__coctails--icon img:hover {
+  transform: scale(0.9);
+}
+
+.season__coctails--icon img:active {
+  transform: scale(0.95);
+}
+
+/* Cards */
+.season__coctails--cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.season__coctails--card {
+  width: 300px;
+  height: 880px;
+}
+
+.season__coctails--card img {
+  width: 130px;
+  height: 130px;
+}
+.season__coctails--card--name {
+  font-size: 3rem;
+  font-family: 'april_juneregular', sans-serif;
+}
+.ingredients__title,
+.instructions__title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.season__coctails--card--ingredients,
+.season__coctails--card--instructions {
+  padding: 1rem;
+  border-right: 1px solid var(--color-secondary);
+}
+
+.season__coctails--card--ingredients {
+  height: 350px;
+}
+.season__coctails--card--instructions {
+  height: 200px;
+}
+
+/* RANDOM COCKTAILS */
+.random__cocktail--header {
+  text-align: center;
+}
+
+.random__cocktail--header h4 {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: calc(20px + 0.7vw);
+  font-weight: 400;
+  letter-spacing: var(--spacing);
+}
+
+.random__cocktail--main {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.random__cocktail--main--image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.random__cocktail--main-ingredients,
+.random__cocktail--main--image,
+.random__cocktail--main--instruction {
+  flex: 1;
+  text-align: center;
+}
+.random__cocktail--main-ingredients,
+.random__cocktail--main--instruction {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.random__cocktail--main-title {
+  font-size: 4rem;
+  font-family: 'april_juneregular', sans-serif;
+}
+
+.btn {
+  padding: 10px 30px;
+  border-radius: 16px;
+  border: 2px solid var(--color-Yellow-dark);
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.random__cocktail--main--btn {
+  background-color: transparent;
+}
+
+.btn:hover {
+  background-color: var(--color-Yellow);
+  color: #fff;
+  border: 1px solid var(--color-Yellow-dark);
+
+  outline: 1px solid var(--color-secondary-dark);
+  outline-offset: 5px;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}

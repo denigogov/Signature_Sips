@@ -1,0 +1,135 @@
+@use './general';
+@use './colors';
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 50px;
+}
+.left {
+  min-width: 70%;
+  letter-spacing: general.$spacing;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 1rem;
+
+  a {
+    color: colors.$color-secondary-dark;
+    font-size: 1.1rem;
+    line-height: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    font-size: 1.15rem;
+  }
+}
+
+.hero {
+  height: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroText__Title {
+  font-size: calc(30px + 1vw);
+  padding: 1rem;
+}
+
+.heroText__underTitle {
+  max-width: 70%;
+}
+
+.hero__btn {
+  margin: 2rem;
+  background-color: colors.$color-Yellow;
+  padding: 10px 30px;
+  border-radius: 16px;
+  border: 1px solid colors.$color-Yellow-dark;
+  transition: all 0.35s ease;
+  cursor: pointer;
+
+  outline: 1px solid colors.$color-secondary-dark;
+  outline-offset: 5px;
+}
+
+.hero__btn:hover {
+  background-color: colors.$color-Yellow-dark;
+  border: 1px solid colors.$color-Yellow;
+  color: #000;
+}
+
+.hero__btn:active {
+  transform: scale(0.9);
+}
+/* Right Side */
+
+.heroRight {
+  display: block;
+  /* max-width: 100%; */
+  margin: 0 auto;
+  border-left: 1px solid colors.$color-Yellow-dark;
+  position: relative;
+  width: 100%;
+  height: auto; /* specify a height for the container */
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* POPUP PULS BTN */
+.info-PopUp {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.info-popUp__btn {
+  padding: 10px;
+  background-color: transparent;
+  border: 3px solid colors.$color-Yellow-dark;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 700;
+  animation: gin infinite 1.3s linear;
+}
+.info-popUp__btn:hover {
+  background-color: colors.$color-Yellow;
+}
+
+@keyframes gin {
+  0% {
+    background-color: colors.$color-Yellow;
+  }
+}
+
+.popUp {
+  background-color: rgba(255, 255, 255, 0.74);
+  width: 200px;
+  height: 100px;
+
+  border-radius: 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
