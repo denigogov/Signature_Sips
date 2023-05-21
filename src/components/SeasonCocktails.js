@@ -1,22 +1,22 @@
-import SeasonItem from "./SeasonItems";
-import { useState } from "react";
+import SeasonItem from './SeasonItems';
+import { useState } from 'react';
 
 const SeasonCocktails = ({ apiData }) => {
   // UnderLine
-  const [season, setSeason] = useState("spring");
+  const [season, setSeason] = useState('spring');
 
   // Season click handlers! on every clcik we change the state !!
   const winterHandler = () => {
-    setSeason("winter");
+    setSeason('winter');
   };
   const springHandler = () => {
-    setSeason("spring");
+    setSeason('spring');
   };
   const summerHandler = () => {
-    setSeason("summer");
+    setSeason('summer');
   };
   const autumnHandler = () => {
-    setSeason("autumn");
+    setSeason('autumn');
   };
 
   /**
@@ -28,7 +28,7 @@ const SeasonCocktails = ({ apiData }) => {
     return (
       <div className="season__coctails--cards">
         {apiData
-          .filter((ses) => {
+          .filter(ses => {
             return ses.season === `${season}`;
           })
           .map((season, i) => {
@@ -47,19 +47,19 @@ const SeasonCocktails = ({ apiData }) => {
   };
 
   //I can't use direcly state in fn, thats why I add this variable with name border to use the state inside
-  let border = season;
+  let seasons = season;
   /**
    *
    * @param {hardcoded, season name }
    * @returns {if the state === fn param than its return new class (underline under img) }
    */
-  const seasonSetup = (season) => {
-    return border === `${season}` ? "season__coctails--icon--underLine" : "";
+  const seasonSetup = season => {
+    return seasons === `${season}` ? 'season__coctails--icon--underLine' : '';
   };
 
   // JSX
   return (
-    <section className="season__coctails--header">
+    <section id="season" className="season__coctails--header">
       <div className="season__coctails">
         <div className="season__coctails--title">
           <h4>choose your cocktail by season</h4>
@@ -70,25 +70,25 @@ const SeasonCocktails = ({ apiData }) => {
 
         <div className="season__coctails--icon">
           <img
-            className={seasonSetup("winter")}
+            className={seasonSetup('winter')}
             onClick={winterHandler}
             src="./assets/winter-icon.png"
             alt="winter icon"
           />
           <img
-            className={seasonSetup("spring")}
+            className={seasonSetup('spring')}
             onClick={springHandler}
             src="./assets/spring-icon.png"
             alt="spring icon"
           />
           <img
-            className={seasonSetup("summer")}
+            className={seasonSetup('summer')}
             onClick={summerHandler}
             src="./assets/summer-icon.png"
             alt="summer icon"
           />
           <img
-            className={seasonSetup("autumn")}
+            className={seasonSetup('autumn')}
             onClick={autumnHandler}
             src="./assets/autumn-icon.png"
             alt="autumn icon"

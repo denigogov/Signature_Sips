@@ -11,16 +11,16 @@ const Header = () => {
               <a href="#">Home</a>
             </li>
             <li className="navLink">
-              <a href="#">Season</a>
+              <a href="#season">Season</a>
             </li>
             <li>
               <img className="logo" src="./assets/logo.png" alt="" />
             </li>
             <li className="navLink">
-              <a href="#">Contact</a>
+              <a href="#statistic">Statistic</a>
             </li>
             <li className="navLink">
-              <a href="#">Search</a>
+              <a href="#footer">Contact</a>
             </li>
           </ul>
         </nav>
@@ -30,7 +30,10 @@ const Header = () => {
             "Signature Sips: Crafting Unique and Delicious Cocktails for Every
             Occasion"
           </p>
-          <p className="hero__btn">Mix it Up!</p>
+
+          <a className="hero__btn" href="#random">
+            Mix it Up!
+          </a>
         </div>
       </div>
 

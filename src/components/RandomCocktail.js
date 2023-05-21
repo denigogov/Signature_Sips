@@ -18,13 +18,10 @@ const RandomCocktail = ({ apiData }) => {
   };
 
   return (
-    <section className="random__cocktail">
+    <section id="random" className="random__cocktail">
       <div className="random__cocktail--header">
         <h4>Sip & Surprise</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
-          quia!
-        </p>
+        <p>"Unleash the Unexpected with Random Cocktails"</p>
       </div>
 
       {/* Looping over apiData //With filter and random number showing random cocktails! */}
@@ -46,7 +43,7 @@ const RandomCocktail = ({ apiData }) => {
 
                 {/* IMAGE  */}
                 <div className="random__cocktail--main--image">
-                  <img src={drink.image} alt="" />
+                  <img src={drink.image} alt="image of cocktail" />
                   <p className="random__cocktail--main-title">{drink.name}</p>
                   <button
                     onClick={handlerClick}
