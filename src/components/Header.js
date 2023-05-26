@@ -1,5 +1,7 @@
 import SeasonItem from './SeasonItems';
-import '../sass/_main.scss';
+import '../sass/components/_header.scss';
+import logo from '../assets/logo.png';
+import heroImg from '../assets/Old Fashioned—Studio Bon.jpg';
 
 const Header = () => {
   return (
@@ -14,7 +16,7 @@ const Header = () => {
               <a href="#season">Season</a>
             </li>
             <li>
-              <img className="logo" src="./assets/logo.png" alt="" />
+              <img className="logo" src={logo} alt="website logo" />
             </li>
             <li className="navLink">
               <a href="#statistic">Statistic</a>
@@ -38,7 +40,7 @@ const Header = () => {
       </div>
 
       <div className="heroRight">
-        <img src="../assets/Old Fashioned—Studio Bon.jpg" alt="" />
+        <img src={heroImg} alt="hero image bottles abstract" />
 
         {/* <!-- PopUp btn --> */}
         <div className="info-PopUp">

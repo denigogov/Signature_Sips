@@ -1,5 +1,6 @@
 import githubIcon from '../assets/githubIcon.svg';
 import linkedInIcon from '../assets/linkedin-logo-svgrepo-com.svg';
+import '../sass/components/_footer.scss';
 
 const Footer = () => {
   return (

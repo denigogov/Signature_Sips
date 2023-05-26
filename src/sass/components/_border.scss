@@ -1,0 +1,12 @@
+@use '../colors';
+
+.underHeader {
+  border-top: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    to left,
+    colors.$color-Yellow,
+    #a8682c,
+    #f2e63a
+  );
+}

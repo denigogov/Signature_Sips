@@ -1,12 +1,13 @@
-import { useState } from "react";
-import SeasonItem from "./SeasonItems";
+import { useState } from 'react';
+import SeasonItem from './SeasonItems';
+import '../sass/components/_list.scss';
 
 const List = ({ apiData }) => {
   //storing the value of select>option Value!
-  const [drinks, setDrinks] = useState("");
+  const [drinks, setDrinks] = useState('');
 
   // onChange => eventListener
-  const selectChangeHandler = (e) => {
+  const selectChangeHandler = e => {
     setDrinks(e.target.value);
   };
 
@@ -21,7 +22,7 @@ const List = ({ apiData }) => {
 
   // Rendering the coctail from the optionList
   const filterListRender = apiData
-    .filter((coctail) => {
+    .filter(coctail => {
       return coctail.name === drinks;
     })
     .map((coctail, i) => {
@@ -38,7 +39,7 @@ const List = ({ apiData }) => {
   // JSX
   return (
     <div>
-      <select onChange={selectChangeHandler} className="vanco" name="testing">
+      <select onChange={selectChangeHandler} name="testing">
         <option value="">...</option>
         {optList}
       </select>

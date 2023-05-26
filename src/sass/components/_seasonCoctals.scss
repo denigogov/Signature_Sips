@@ -1,0 +1,21 @@
+@use '../colors';
+@use '../general';
+
+.season__coctails {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.season__coctails--header {
+  text-align: center;
+  letter-spacing: 2px;
+  h4 {
+    font-size: calc(20px + 0.7vw);
+    font-weight: 400;
+  }
+}
+.season__coctails--cards {
+  display: flex;
+  justify-content: space-around;
+}

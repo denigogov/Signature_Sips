@@ -40,7 +40,7 @@ ul {
 }
 
 /* BORDER */
-.underHeader {
+/* .underHeader {
   border-top: 10px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -49,10 +49,10 @@ ul {
     #a8682c,
     #f2e63a
   );
-}
+} */
 
 /* Section Season Coctail */
-.season__coctails {
+/* .season__coctails {
   width: 60%;
   margin: 0 auto;
   margin-top: 6rem;
@@ -93,10 +93,10 @@ p {
 
 .season__coctails--icon img:active {
   transform: scale(0.95);
-}
+} */
 
 /* Cards */
-.season__coctails--cards {
+/* .season__coctails--cards {
   display: flex;
   justify-content: space-around;
 }
@@ -131,10 +131,10 @@ p {
 }
 .season__coctails--card--instructions {
   height: 200px;
-}
+} */
 
 /* RANDOM COCKTAILS */
-.random__cocktail--header {
+/* .random__cocktail--header {
   text-align: center;
 }
 
@@ -168,7 +168,7 @@ p {
 }
 .random__cocktail--main-ingredients,
 .random__cocktail--main--instruction {
-  /* margin-top: 7rem; */
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,7 +201,7 @@ p {
 
 .btn:active {
   transform: scale(0.9);
-}
+} */
 
 /* STATISTIC SECTION !! */
 .statistic__title {
@@ -227,7 +227,7 @@ p {
   align-items: center;
 }
 
-.statistic__container--list {
+.statistic__container--_randomCoctail.scss {
   width: 600px;
   padding: 13px;
 }
@@ -261,7 +261,7 @@ p {
 
 /* FOOTER SECTION */
 
-footer {
+/* footer {
   margin-top: 5rem;
   background-color: #f3f3f356;
   text-align: center;
@@ -286,4 +286,4 @@ footer p {
 
 .linkedInLogo {
   width: 55px;
-}
+} */

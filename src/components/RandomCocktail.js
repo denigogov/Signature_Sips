@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../sass/components/_randomCoctail.scss';
 
 const RandomCocktail = ({ apiData }) => {
   // Store the random number

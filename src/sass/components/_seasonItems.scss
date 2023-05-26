@@ -1,0 +1,32 @@
+.season__coctails--card {
+  width: 300px;
+  height: 880px;
+
+  img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+.season__coctails--card--name {
+  font-size: 3rem;
+  font-family: 'april_juneregular', sans-serif;
+}
+.ingredients__title,
+.instructions__title {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.season__coctails--card--ingredients,
+.season__coctails--card--instructions {
+  padding: 1rem;
+  border-right: 1px solid var(--color-secondary);
+}
+
+.season__coctails--card--ingredients {
+  height: 350px;
+}
+.season__coctails--card--instructions {
+  height: 200px;
+}

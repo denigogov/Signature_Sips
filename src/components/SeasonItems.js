@@ -1,3 +1,5 @@
+import '../sass/components/_seasonItems.scss';
+
 const SeasonItem = ({ name, image, ingredients, instuction }) => {
   return (
     <div className="season__coctails--card">

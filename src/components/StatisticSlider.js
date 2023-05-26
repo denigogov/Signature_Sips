@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import sliderData from '../sliderData';
+import '../sass/components/_statisticSlider.scss';
 
 const StatisticSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

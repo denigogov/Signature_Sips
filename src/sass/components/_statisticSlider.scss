@@ -1,0 +1,36 @@
+// @import './statisticPieChart';
+@use '../colors';
+@use '../general';
+.statistic__container--list {
+  width: 600px;
+  padding: 13px;
+}
+
+.statistic__container--title {
+  font-size: 1.3rem;
+  text-align: center;
+  word-wrap: break-word;
+  padding: 10px;
+  border-bottom: 1px solid colors.$color-Yellow-dark;
+  margin-bottom: 10px;
+}
+
+.sliderBtn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  p {
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: #d39b2c;
+    }
+
+    &:active {
+      transform: general.$transform;
+    }
+  }
+}

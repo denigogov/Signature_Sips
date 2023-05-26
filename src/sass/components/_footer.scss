@@ -1,0 +1,28 @@
+@use '../colors';
+
+footer {
+  margin-top: 5rem;
+  background-color: colors.$footerBackground;
+  text-align: center;
+}
+
+footer p {
+  font-family: 'april_juneregular';
+  font-size: 32px;
+}
+
+.footer__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.githubLogo {
+  width: 25px;
+}
+
+.linkedInLogo {
+  width: 55px;
+}

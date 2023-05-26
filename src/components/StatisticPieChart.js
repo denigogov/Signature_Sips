@@ -1,9 +1,8 @@
 import { Pie } from 'react-chartjs-2';
 // Don't remove it (chart.js/auto), its required to be imported this is how chart.js works
 import { Colors, Chart as chartjs } from 'chart.js/auto';
-import sliderData from '../sliderData';
-import { useEffect, useState } from 'react';
 import StatisticSlider from './StatisticSlider';
+import '../sass/components/_statisticPieChart.scss';
 
 const StatisticPieChart = ({ PieChartData }) => {
   return (

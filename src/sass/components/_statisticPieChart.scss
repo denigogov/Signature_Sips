@@ -1,0 +1,25 @@
+@use '../colors';
+@use '../general';
+
+.statistic__title {
+  text-align: center;
+
+  h4 {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: calc(20px + 0.7vw);
+    font-weight: 400;
+    letter-spacing: general.$spacing;
+  }
+}
+
+.statistic__container {
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: justify;
+  flex-direction: row-reverse;
+  align-items: center;
+}

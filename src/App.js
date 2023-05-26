@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import Header from './components/Header';
 import Border from './components/Border';
 import SeasonCocktails from './components/SeasonCocktails';

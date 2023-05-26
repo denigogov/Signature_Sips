@@ -1,0 +1,28 @@
+@use '../colors';
+@use '../general';
+
+.season__coctails--icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 4rem 0;
+
+  img {
+    width: 50px;
+    cursor: pointer;
+    transition: general.$transition;
+    padding-bottom: 10px;
+  }
+}
+
+.season__coctails--icon--underLine {
+  border-bottom: solid colors.$color-Yellow;
+
+  &:hover {
+    transform: general.$transform;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
