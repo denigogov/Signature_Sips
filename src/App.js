@@ -16,8 +16,8 @@ const App = () => {
     labels: user.map(data => data.year),
     datasets: [
       {
-        label: 'Users Gained',
-        data: user.map(data => data.userGain),
+        label: 'Users userLost',
+        data: user.map(data => data.userLost),
         rotation: 90,
         spacing: 4,
         hoverOffset: 30,
