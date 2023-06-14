@@ -4,7 +4,7 @@ import { Colors, Chart as chartjs } from 'chart.js/auto';
 import StatisticSlider from './StatisticSlider';
 import '../sass/components/_statisticPieChart.scss';
 
-const StatisticPieChart = ({ PieChartData }) => {
+const StatisticPieChart = ({ PieChartData, season }) => {
   return (
     <section id="statistic">
       <div className="statistic__title">
@@ -18,7 +18,9 @@ const StatisticPieChart = ({ PieChartData }) => {
           className="statistic__container--pieChart"
           style={{ width: '420px', height: '420px' }}
         >
-          <p style={{ textAlign: 'center' }}>Placeholder</p>
+          <p style={{ textAlign: 'center', textTransform: 'capitalize' }}>
+            Top 10 Best-Selling {season} Cocktails for 2022
+          </p>
           <Pie data={PieChartData} />
         </div>
       </div>
