@@ -19,3 +19,11 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media (max-width: 1280px) {
+  .season__coctails--cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}

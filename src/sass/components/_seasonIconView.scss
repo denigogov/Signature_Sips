@@ -26,3 +26,19 @@
     transform: scale(0.95);
   }
 }
+
+@media (max-width: 640px) {
+  .season__coctails--icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+
+    img {
+      width: 50px;
+      cursor: pointer;
+      transition: general.$transition;
+      padding-bottom: 10px;
+    }
+  }
+}

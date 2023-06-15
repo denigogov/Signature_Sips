@@ -9,18 +9,13 @@ const StatisticPieChart = ({ PieChartData, season }) => {
     <section id="statistic">
       <div className="statistic__title">
         <h4>Journey into Cocktail Statistics</h4>
-        <p>"Sip & Discover: Unveipng the Cocktail Realm"</p>
+        <p>"Sip & Discover: Unveiling the Cocktail Realm"</p>
       </div>
 
       <div className="statistic__container">
         <StatisticSlider />
-        <div
-          className="statistic__container--pieChart"
-          style={{ width: '420px', height: '420px' }}
-        >
-          <p style={{ textAlign: 'center', textTransform: 'capitalize' }}>
-            Top 10 Best-Selling {season} Cocktails for 2022
-          </p>
+        <div className="statistic__container--pieChart">
+          <p>Top 10 Best-Selling {season} Cocktails for 2022</p>
           <Pie data={PieChartData} />
         </div>
       </div>

@@ -69,3 +69,15 @@
     transform: general.$transform;
   }
 }
+
+@media (max-width: 768px) {
+  .random__cocktail--main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .random__cocktail--main--image {
+    order: -1;
+  }
+}

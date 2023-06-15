@@ -21,7 +21,7 @@ header {
 
   a {
     color: colors.$color-secondary-dark;
-    font-size: 1.1rem;
+    // font-size: 1.2vw;
     line-height: 50px;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -43,17 +43,20 @@ header {
 
 .heroText__Title {
   font-size: calc(30px + 1vw);
+  // font-size: 3vw;
   padding: 1rem;
 }
 
 .heroText__underTitle {
   max-width: 70%;
+  // font-size: 1.04vw;
 }
 
 .hero__btn {
   margin: 2rem;
   background-color: colors.$color-Yellow;
-  padding: 10px 30px;
+  // padding: 10px 30px;
+  padding: 1vw 2vw;
   border-radius: 16px;
   border: 1px solid colors.$color-Yellow-dark;
   transition: all 0.35s ease;
@@ -132,4 +135,19 @@ header {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 640px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  .navList {
+    display: none;
+  }
+
+  .heroRight {
+    display: none;
+  }
 }

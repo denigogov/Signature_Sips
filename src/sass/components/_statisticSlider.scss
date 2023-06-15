@@ -34,3 +34,10 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .statistic__container--list {
+    width: 100vw;
+    padding: 13px;
+  }
+}
