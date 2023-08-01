@@ -8,6 +8,7 @@ import RandomCocktail from './components/RandomCocktail';
 import StatisticPieChart from './components/StatisticPieChart';
 import Footer from './components/Footer';
 import cocktailPieData from './pieChartData';
+import Loading from './components/Loading';
 
 const App = () => {
   const [api, setApi] = useState([]);
@@ -66,8 +67,8 @@ const App = () => {
     const summerEnd = { month: 9, date: 22 };
     const autumnStart = { month: 9, date: 23 };
     const autumnEnd = { month: 12, date: 20 };
-    const winterStart = { month: 12, date: 21 };
-    const winterEnd = { month: 3, date: 19 };
+    // const winterStart = { month: 12, date: 21 };
+    // const winterEnd = { month: 3, date: 19 };
 
     // Checking if the current date falls within each season's range
     if (isDateInRange(month, date, springStart, springEnd)) {

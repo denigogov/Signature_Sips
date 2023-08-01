@@ -1,8 +1,10 @@
 import '../sass/components/_seasonCoctals.scss';
 import ApiRenderData from './ApiRenderData';
 import SeasonIconView from './SeasonIconView';
+import Loading from './Loading';
 
 const SeasonCocktails = ({ apiData, season, setSeason }) => {
+  console.log(apiData);
   return (
     <section id="season" className="season__coctails--header">
       <div className="season__coctails">
@@ -12,7 +14,11 @@ const SeasonCocktails = ({ apiData, season, setSeason }) => {
         <SeasonIconView season={season} setSeason={setSeason} />
       </div>
       <div className="season__coctails--cards">
-        <ApiRenderData apiData={apiData} season={season} />
+        {apiData.length ? (
+          <ApiRenderData apiData={apiData} season={season} />
+        ) : (
+          <Loading />
+        )}
       </div>
     </section>
   );

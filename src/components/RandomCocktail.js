@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../sass/components/_randomCoctail.scss';
+import Loading from './Loading';
 
 const RandomCocktail = ({ apiData }) => {
   // Store the random number
@@ -26,43 +27,47 @@ const RandomCocktail = ({ apiData }) => {
       </div>
 
       {/* Looping over apiData //With filter and random number showing random cocktails! */}
-      {apiData
-        .filter(drink => {
-          return drink.id === random;
-        })
-        .map((drink, i) => {
-          return (
-            <div key={i}>
-              <div className="random__cocktail--main">
-                {/* ingredients */}
+      {apiData.length ? (
+        apiData
+          .filter(drink => {
+            return drink.id === random;
+          })
+          .map((drink, i) => {
+            return (
+              <div key={i}>
+                <div className="random__cocktail--main">
+                  {/* ingredients */}
 
-                <div className="random__cocktail--main-ingredients">
-                  <p className="random__cocktail--main-title">description</p>
+                  <div className="random__cocktail--main-ingredients">
+                    <p className="random__cocktail--main-title">description</p>
 
-                  <p>{drink.description}</p>
-                </div>
+                    <p>{drink.description}</p>
+                  </div>
 
-                {/* IMAGE  */}
-                <div className="random__cocktail--main--image">
-                  <img src={drink.image} alt="image of cocktail" />
-                  <p className="random__cocktail--main-title">{drink.name}</p>
-                  <button
-                    onClick={handlerClick}
-                    className="random__cocktail--main--btn btn"
-                  >
-                    random
-                  </button>
-                </div>
+                  {/* IMAGE  */}
+                  <div className="random__cocktail--main--image">
+                    <img src={drink.image} alt="image of cocktail" />
+                    <p className="random__cocktail--main-title">{drink.name}</p>
+                    <button
+                      onClick={handlerClick}
+                      className="random__cocktail--main--btn btn"
+                    >
+                      random
+                    </button>
+                  </div>
 
-                {/*instruction  */}
-                <div className="random__cocktail--main--instruction">
-                  <p className="random__cocktail--main-title">instructions</p>
-                  <p>{drink.instructions}</p>
+                  {/*instruction  */}
+                  <div className="random__cocktail--main--instruction">
+                    <p className="random__cocktail--main-title">instructions</p>
+                    <p>{drink.instructions}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })
+      ) : (
+        <Loading />
+      )}
     </section>
   );
 };
